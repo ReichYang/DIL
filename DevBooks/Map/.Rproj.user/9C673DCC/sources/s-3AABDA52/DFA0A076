@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553569605853.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DFA0A076",
+    "lastKnownWriteTime" : 1553643415,
+    "last_content_update" : 1553643415387,
+    "path" : "C:/Users/Jayden x Reich/Desktop/Digital Innovation Lab/silent-sam-twitter/DevBooks/Map/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "cursorPosition" : "48,5",
+        "scrollLine" : "38"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

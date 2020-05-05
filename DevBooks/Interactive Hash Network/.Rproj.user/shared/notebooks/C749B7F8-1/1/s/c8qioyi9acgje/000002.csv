@@ -1,0 +1,23 @@
+"0","hs=read_csv(""hastages with info.csv"")"
+"2","Missing column names filled in: 'X1' [1]"
+"2","Parsed with column specification:
+cols(
+  .default = col_double(),
+  X1 = col_integer(),
+  from = col_character(),
+  to = col_character(),
+  index = col_integer(),
+  from_user = col_character(),
+  user_geo_enabled = col_character(),
+  user_verified = col_character(),
+  user_screen_name = col_character(),
+  lang_trans = col_character(),
+  date = col_datetime(format = """"),
+  yearmon = col_character(),
+  trans_sour = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","edges=hs[,c(2,3,5)]"
+"0","nodes=unique(hs[,5])"

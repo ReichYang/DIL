@@ -1,0 +1,4 @@
+"0","nodes <- read_csv(""emoji_degree.csv"")[,-1]"
+"2","Missing column names filled in: 'X1' [1]"
+"0","edges <- read_csv(""emoji_edges.csv"",)[,-1]"
+"2","Missing column names filled in: 'X1' [1]"

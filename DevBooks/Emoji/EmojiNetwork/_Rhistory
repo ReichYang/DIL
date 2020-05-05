@@ -1,0 +1,512 @@
+size=5) +
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, family="OpenSansEmoji"),
+size=5) +
+theme_blank()
+p <-  ggtree(read.tree(text=tree_text), size=2) + geom_tiplab(size=20)
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, family="OpenSansEmoji"),
+size=5) +
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, family="OpenSansEmoji"),
+size=5) +
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()
+View(dat)
+View(nodes)
+View(nodes)
+merge(dat, nodes,by.x = vertex.names, by.y = emoji)
+merge(dat, nodes,by.x = vertex.names, by.y = emoji)
+merge(dat, nodes,by.x = "vertex.names", by.y = "emoji")
+merge(dat, nodes,by.x = "vertex.names", by.y = "emoji", all.x = T)
+dat2=merge(dat, nodes,by.x = "vertex.names", by.y = "emoji", all.x = T)
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, family="OpenSansEmoji"),
+size=8, color=degree) +
+theme_blank()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, family="OpenSansEmoji",color=degree),
+size=8) +
+theme_blank()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat,aes(x=x, y=y, label=vertex.names, color=degree, family="OpenSansEmoji"),
+size=8) +
+theme_blank()
+View(dat2)
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=degree, family="OpenSansEmoji"),
+size=8) +
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=8) +scale_colour_gradientn(colours = terrain.colors(10))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=8) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf")
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=12) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 1200, height = 900,title = "SilentSam Emoji Co-occurence")
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 1200, height = 900)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=12) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 480, height = 600)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=12) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=50) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=sqrt(degree)) +scale_color_gradientn(colours = rainbow(5))
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+size=sqrt(degree)) +scale_color_gradientn(colours = rainbow(5))
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree),size=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree),size=sqrt(degree)*100, family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 400, height = 400)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree),size=100, family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 40, height = 40)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree),size=100, family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 15, height = 15)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree),size=100, family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(5))+
+theme_blank()
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text_repel(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7))+
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text_repel(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7))
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+distinct(dat2)
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7))
+#ps = grid.export("emoji.svg", addClass=T)
+dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7))
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7)))
+library(gridSVG)
+library(emojifont)
+library(Cairo)
+require(grDevices)
+load.emojifont("OpenSansEmoji.ttf")
+#cairo_pdf("test.pdf",width = 7, height = 7)
+#windows()
+#dat$names <- as.character(dat$vertex.names)
+ggplot() +
+geom_edges(data=dat2,
+aes(x=x, y=y, xend=xend, yend=yend),alpha=1/3) +
+geom_nodes(data=dat2,
+aes(x=x, y=y),
+alpha=1/3,show.legend = TRUE) +
+geom_text(data=dat2,aes(x=x, y=y, label=vertex.names, color=sqrt(degree), family="OpenSansEmoji"),
+) +scale_color_gradientn(colours = rainbow(7))
+ps = grid.export("emoji.svg", addClass=T)
+#dev.off()

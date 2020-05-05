@@ -1,0 +1,12 @@
+name: SilentSMap
+title: SilentSamMap
+username:
+account: yukunyang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 816643
+bundleId: 1967093
+url: https://yukunyang.shinyapps.io/SilentSMap/
+when: 1553644632.25001
+asMultiple: FALSE
+asStatic: FALSE

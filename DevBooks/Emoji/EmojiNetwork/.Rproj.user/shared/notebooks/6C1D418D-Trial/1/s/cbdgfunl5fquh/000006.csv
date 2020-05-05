@@ -1,0 +1,3 @@
+"0","gr <- graph.data.frame(edges[,c(""emo1"", ""emo2"")], directed=FALSE)"
+"0","dat <- ggnetwork(gr,layout=""fruchtermanreingold"")"
+"2","duplicated edges detected"

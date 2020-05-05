@@ -1,0 +1,92 @@
+install.packages("shiny"）
+library(shiny)
+library(leaflet)
+library(tidyverse)
+library(shiny)
+library(leaflet)
+library(tidyverse)
+df=read_csv("SilentSam Tweets with Std. Location.csv")
+View(df)
+file.create("global.R")
+file.create("server.R")
+file.create("ui.R")
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+View(df)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+round.Date(df$time, "days")
+round.Date(df$time, days)
+?round.Date
+round.Date(df$time, units="days")
+round(df$time, units="days")
+df$date <- round(df$time, units="days")
+class(df$date)
+runApp()
+df$date
+df$date[1]
+runApp()
+runApp()
+runApp()
+runApp()
+df$date>"2019-02-28 UTC"
+df[df$date>"2019-02-28 UTC"]
+df[[df$date>"2019-02-28 UTC"]]
+df[df$date>"2019-02-28 UTC",:]
+df[df$date>"2019-02-28 UTC",]
+df[df$date<"2019-02-28 UTC",]
+runApp()
+df$time[1]
+as.Date(df$time[1])
+df$date <- as.Date(df$time)
+df$date
+class(df$date)
+runApp()
+runApp()
+df$date > "2018-06-07"
+df[df$date >= "2018-06-07" & df$date <= "2018-06-07"]
+df[df$date >= "2018-06-07" & df$date <= "2018-06-07",]
+df[df$date >= "2018-12-07" & df$date <= "2018-12-07",]
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+View(df)
+runApp()
+runApp()
+runApp()
+install.packages('rsconnect')
+install.packages("rsconnect")
+rsconnect::setAccountInfo(name='yukunyang',
+token='4DBC64D9177130274F0B74F6D75FE784',
+secret='hedYAcpyj7ZyoydqGYkWXf1ejkc+dtN8JolHmKPz')
+library(rsconnect)
+rsconnect::deployApp()
+rsconnect::setAccountInfo(name='yukunyang',
+token='4DBC64D9177130274F0B74F6D75FE784',
+secret='hedYAcpyj7ZyoydqGYkWXf1ejkc+dtN8JolHmKPz')
+rsconnect::deployApp()
+rsconnect::deployApp('path/to/your/app')
+rsconnect::setAccountInfo(name='yukunyang', token='4DBC64D9177130274F0B74F6D75FE784', secret='hedYAcpyj7ZyoydqGYkWXf1ejkc+dtN8JolHmKPz')
+rsconnect::deployApp()

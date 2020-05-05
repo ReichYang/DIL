@@ -1,0 +1,69 @@
+knit_with_parameters('C:/Users/Jayden x Reich/Desktop/Digital Innovation Lab/silent-sam-twitter/DevBooks/Interactive Hash Network/1.Rmd')
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+c_spin
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+hs=read_csv("hastages with info.csv")
+edges=hs[,c(2,3,5)]
+nodes=unique(hs[,5])
+over_ten <-  edges %>% group_by(.dots=c("from","to")) %>% summarise(n=n()) %>% filter(n>25)
+over_ten_nodes <- as_data_frame(unique(append(unique(over_ten$to),unique(over_ten$from))))
+colnames(over_ten_nodes) <- "id"
+colnames(over_ten) <- c("from","to","value")
+over_ten_nodes$label=over_ten_nodes$id
+library(visNetwork)
+library(igraph)
+graph <- graph.data.frame(over_ten, directed = F)
+degree_value <- degree(graph)
+c_spin <- spinglass.community(graph)
+mod=data.frame(names=c_spin$names, group=c_spin$membership)
+over_ten_nodes$value <- degree_value[match(over_ten_nodes$id, names(degree_value))]
+over_ten_nodes <- merge(over_ten_nodes,mod,by.x = "id", by.y ="names")
+over_ten_nodes$color.background <- c("orange", "pink", "yellow", "blue","gold","purple","lightblue","black","darkblue","darkred","green","lightgreen","lightblue","darkgreen","darkyellow")[over_ten_nodes$group]
+visNetwork(over_ten_nodes,over_ten)%>%
+visOptions(highlightNearest = TRUE) %>% visOptions(selectedBy = "group")
+c_spin
+print(c_spin)
+print(c_spin$names)
+print(c_spin$vcount)
+print(c_spin$1)
+print(c_spin$1)
+print(c_spin)
+over_ten <-  edges %>% group_by(.dots=c("from","to")) %>% summarise(n=n()) %>% filter(n>25)
+over_ten_nodes <- as_data_frame(unique(append(unique(over_ten$to),unique(over_ten$from))))
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+hs=read_csv("hastages with info.csv")
+edges=hs[,c(2,3,5)]
+nodes=unique(hs[,5])
+over_ten <-  edges %>% group_by(.dots=c("from","to")) %>% summarise(n=n()) %>% filter(n>25)
+over_ten_nodes <- as_data_frame(unique(append(unique(over_ten$to),unique(over_ten$from))))
+over_ten <-  edges %>% group_by(.dots=c("from","to")) %>% summarise(n=n()) %>% filter(n>25)
+over_ten_nodes <- dplyr::as_data_frame(unique(append(unique(over_ten$to),unique(over_ten$from))))
+colnames(over_ten_nodes) <- "id"
+colnames(over_ten) <- c("from","to","value")
+over_ten_nodes$label=over_ten_nodes$id
+library(visNetwork)
+library(igraph)
+graph <- graph.data.frame(over_ten, directed = F)
+degree_value <- degree(graph)
+c_spin <- spinglass.community(graph)
+mod=data.frame(names=c_spin$names, group=c_spin$membership)
+over_ten_nodes$value <- degree_value[match(over_ten_nodes$id, names(degree_value))]
+over_ten_nodes <- merge(over_ten_nodes,mod,by.x = "id", by.y ="names")
+over_ten_nodes$color.background <- c("orange", "pink", "yellow", "blue","gold","purple","lightblue","black","darkblue","darkred","green","lightgreen","lightblue","darkgreen","darkyellow")[over_ten_nodes$group]
+visNetwork(over_ten_nodes,over_ten)%>%
+visOptions(highlightNearest = TRUE) %>% visOptions(selectedBy = "group")%>%
+visHierarchicalLayout()
+c_spin$csize
+c_spin$membership
+as_data_frame(c_spin)
+c_spin$algorithm
+c_spin$temperature
+print(c_spin)
+View(c_spin)
+c_spin$group
+c_spin$groups
+c_spin[]
+print(c_spin[])
